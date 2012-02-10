@@ -1,7 +1,8 @@
 lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
+lib "MagicalRecord", :git => "git://github.com/twobitlabs/MagicalRecord.git"
 
-lib "OCMock", :targets => [ "Unit Tests", "Functional Tests" ]
-lib "OCHamcrest", :targets => [ "Unit Tests", "Functional Tests" ]
-lib "Specta", :targets => [ "Unit Tests", "Functional Tests" ]
-lib "Expecta", :targets => [ "Unit Tests", "Functional Tests" ]
+lib "OCMock", :git => "git://github.com/twobitlabs/ocmock.git", :targets => [ "Unit Tests", "Integration Tests" ]
+lib "OCHamcrest", :git => "git://github.com/twobitlabs/OCHamcrest.git", :targets => [ "Unit Tests", "Integration Tests" ]
+lib "Specta", :git => "git://github.com/twobitlabs/specta.git", :targets => [ "Unit Tests", "Integration Tests" ]
+lib "Expecta", :git => "git://github.com/twobitlabs/expecta.git", :targets => [ "Unit Tests", "Integration Tests" ]
 
