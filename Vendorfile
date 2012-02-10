@@ -1,0 +1,7 @@
+lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
+
+lib "OCMock", :targets => [ "Unit Tests", "Functional Tests" ]
+lib "OCHamcrest", :targets => [ "Unit Tests", "Functional Tests" ]
+lib "Specta", :targets => [ "Unit Tests", "Functional Tests" ]
+lib "Expecta", :targets => [ "Unit Tests", "Functional Tests" ]
+

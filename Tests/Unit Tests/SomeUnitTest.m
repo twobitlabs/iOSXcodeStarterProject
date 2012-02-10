@@ -1,14 +1,17 @@
 //
-//  ApplicationTests.m
-//  ApplicationTests
+//  SomeUnitTest.m
+//  Unit Tests
 //
-//  Created by Todd Huss on 2/9/12.
+//  Created by Christopher Pickslay on 2/9/12.
 //  Copyright (c) 2012 Two Bit Labs. All rights reserved.
 //
 
-#import "ApplicationTests.h"
+#import "BaseTestCase.h"
 
-@implementation ApplicationTests
+@interface SomeUnitTest : BaseTestCase
+@end
+
+@implementation SomeUnitTest
 
 - (void)setUp
 {
@@ -26,7 +29,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in ApplicationTests");
+    STFail(@"Unit tests are not implemented yet in Unit Tests");
 }
 
 @end
