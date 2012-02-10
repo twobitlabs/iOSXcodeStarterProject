@@ -10,7 +10,7 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 #import "Specta.h"
-#import <OCMock/OCMock.h>
+#import "OCMock.h"
 #define HC_SHORTHAND
 #import <OCHamcrestIOS/OCHamcrestIOS.h>
 
