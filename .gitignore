@@ -22,4 +22,4 @@ xcuserdata
 
 # VendorKit
 Vendor
-*.vendorbackup
+*.vendorbackup*
