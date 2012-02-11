@@ -1,8 +1,10 @@
-lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
-lib "MagicalRecord", :git => "git://github.com/twobitlabs/MagicalRecord.git", :require => "Source"
+target "Application" do
+    lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
+    lib "MagicalRecord", :git => "git://github.com/magicalpanda/MagicalRecord.git", :require => "Source", :branch => "remotes/origin/iOS5-only"
+    # lib "TestFlightSDK", "~> 0.8"
+end
 
-lib "OCMock", :git => "git://github.com/twobitlabs/ocmock.git", :require => "Source/OCMock", :targets => [ "Unit Tests", "Integration Tests" ]
-lib "OCHamcrest", :git => "git://github.com/twobitlabs/OCHamcrest.git", :require => "Source/Core", :require => "Source/Library", :targets => [ "Unit Tests", "Integration Tests" ]
+lib "OCMock", :git => "git://github.com/twobitlabs/ocmock.git", :targets => [ "Unit Tests", "Integration Tests" ]
 lib "Specta", :git => "git://github.com/twobitlabs/specta.git", :require => "src", :targets => [ "Unit Tests", "Integration Tests" ]
 lib "Expecta", :git => "git://github.com/twobitlabs/expecta.git", :require => "src", :targets => [ "Unit Tests", "Integration Tests" ]
 
