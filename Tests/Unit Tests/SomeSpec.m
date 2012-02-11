@@ -23,7 +23,10 @@ describe(@"SomeSpec", ^{
     });
     
     it(@"should do something", ^{
-        // ...
+        id mockFoo = [OCMockObject mockForClass:[NSString class]];
+        [[[mockFoo stub] andReturn:@"foo"] lowercaseString];
+        
+        expect([mockFoo lowercaseString]).toEqual(@"foo");
     });
     
     describe(@"Nested examples", ^{

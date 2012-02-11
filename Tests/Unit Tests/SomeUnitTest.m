@@ -19,14 +19,16 @@
     // Set-up code here.
 }
 
-- (void)tearDown {
+-(void)tearDown {
     // Tear-down code here.
-    
     [super tearDown];
 }
 
-- (void)testExample {
-    STFail(@"Unit tests are not implemented yet in Unit Tests");
+-(void)testExample {
+    id mockFoo = [OCMockObject mockForClass:[NSString class]];
+    [[[mockFoo stub] andReturn:@"foo"] lowercaseString];
+    
+    expect([mockFoo lowercaseString]).toEqual(@"foo");
 }
 
 @end
