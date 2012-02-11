@@ -1,7 +1,7 @@
 target "Application" do
-    lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
+	lib "TBMacros", :git => "git://github.com/twobitlabs/TBMacros.git"
+	lib "AnalyticsKit", :git => "git://github.com/twobitlabs/AnalyticsKit.git"
     lib "MagicalRecord", :git => "git://github.com/magicalpanda/MagicalRecord.git", :require => "Source", :branch => "remotes/origin/iOS5-only"
-    # lib "TestFlightSDK", "~> 0.8"
 end
 
 lib "OCMock", :git => "git://github.com/twobitlabs/ocmock.git", :targets => [ "Unit Tests", "Integration Tests" ]
