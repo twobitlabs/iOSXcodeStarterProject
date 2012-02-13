@@ -1076,7 +1076,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/Application-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Application-Debug-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1092,7 +1092,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/Application-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Application-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1134,7 +1134,7 @@
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
+				GCC_PREFIX_HEADER = "Classes/Application-Prefix.pch";
 				INFOPLIST_FILE = "Classes/Application-Dev-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
