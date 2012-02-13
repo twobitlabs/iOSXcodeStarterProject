@@ -55,5 +55,7 @@
 	<string>XXXXXXXXXX</string>
 	<key>TestFlightKey</key>
 	<string>XXXXXXXXXX</string>
+	<key>LocalyticsKey</key>
+	<string>XXXXXXXXXX</string>
 </dict>
 </plist>
