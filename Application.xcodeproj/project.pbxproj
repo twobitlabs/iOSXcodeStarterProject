@@ -1077,7 +1077,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
-				INFOPLIST_FILE = "Application/Application-Debug-Info.plist";
+				INFOPLIST_FILE = "Classes/Application-Debug-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
@@ -1093,7 +1093,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
-				INFOPLIST_FILE = "Application/Application-Info.plist";
+				INFOPLIST_FILE = "Classes/Application-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
@@ -1135,7 +1135,7 @@
 				CURRENT_PROJECT_VERSION = 2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Application/Application-Prefix.pch";
-				INFOPLIST_FILE = "Application/Application-Dev-Info.plist";
+				INFOPLIST_FILE = "Classes/Application-Dev-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
