@@ -47,5 +47,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>FlurryKey</key>
+	<string>XXXXXXXXXX</string>
+	<key>ApSalarKey</key>
+	<string>XXXXXXXXXX</string>
+	<key>ApSalarSecret</key>
+	<string>XXXXXXXXXX</string>
+	<key>TestFlightKey</key>
+	<string>XXXXXXXXXX</string>
 </dict>
 </plist>

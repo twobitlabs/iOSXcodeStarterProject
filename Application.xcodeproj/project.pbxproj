@@ -92,6 +92,11 @@
 		9C5BDFBE14E4E1FF00A17A6A /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE23714E4DE1000E6091F /* BaseTestCase.m */; };
 		9C7E972414E4EAC5008DA5D5 /* SomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */; };
 		9C7E972714E4EBF8008DA5D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7E972514E4EBE1008DA5D5 /* CoreData.framework */; };
+		9CBA2C0F14E9B5E0001C4F7C /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C0E14E9B5E0001C4F7C /* libFlurryAnalytics.a */; };
+		9CBA2C1414E9B6C4001C4F7C /* libApsalar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C1314E9B6C4001C4F7C /* libApsalar.a */; };
+		9CBA2C1914E9B721001C4F7C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */; };
+		9CBA2C1A14E9B726001C4F7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */; };
+		9CBA2C2114E9BA14001C4F7C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2C2014E9BA14001C4F7C /* Constants.m */; };
 		9CBFE25214E4DF8000E6091F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9CA14E460EB003DB51A /* SenTestingKit.framework */; };
 		9CBFE25314E4DF8000E6091F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9A914E460EA003DB51A /* UIKit.framework */; };
 		9CBFE25414E4DF8000E6091F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9AB14E460EA003DB51A /* Foundation.framework */; };
@@ -266,6 +271,14 @@
 		9C3491A114E990B600A6E2D0 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeSpec.m; sourceTree = "<group>"; };
 		9C7E972514E4EBE1008DA5D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9CBA2C0D14E9B5E0001C4F7C /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		9CBA2C0E14E9B5E0001C4F7C /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
+		9CBA2C1214E9B6C4001C4F7C /* Apsalar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apsalar.h; sourceTree = "<group>"; };
+		9CBA2C1314E9B6C4001C4F7C /* libApsalar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libApsalar.a; sourceTree = "<group>"; };
+		9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9CBA2C1F14E9BA13001C4F7C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9CBA2C2014E9BA14001C4F7C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		9CBFE23614E4DE1000E6091F /* BaseTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTestCase.h; path = Tests/BaseTestCase.h; sourceTree = SOURCE_ROOT; };
 		9CBFE23714E4DE1000E6091F /* BaseTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = BaseTestCase.m; path = Tests/BaseTestCase.m; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		9CBFE25114E4DF8000E6091F /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -342,6 +355,10 @@
 				8B7CB9AE14E460EA003DB51A /* CoreGraphics.framework in Frameworks */,
 				9C7E972714E4EBF8008DA5D5 /* CoreData.framework in Frameworks */,
 				9C3491A214E990B600A6E2D0 /* libTestFlight.a in Frameworks */,
+				9CBA2C0F14E9B5E0001C4F7C /* libFlurryAnalytics.a in Frameworks */,
+				9CBA2C1414E9B6C4001C4F7C /* libApsalar.a in Frameworks */,
+				9CBA2C1914E9B721001C4F7C /* libsqlite3.0.dylib in Frameworks */,
+				9CBA2C1A14E9B726001C4F7C /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +579,8 @@
 		8B7CB9A814E460EA003DB51A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */,
+				9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */,
 				9C7E972514E4EBE1008DA5D5 /* CoreData.framework */,
 				8B7CB9A914E460EA003DB51A /* UIKit.framework */,
 				8B7CB9AB14E460EA003DB51A /* Foundation.framework */,
@@ -581,6 +600,8 @@
 				8B7CB9C114E460EB003DB51A /* ViewController.h */,
 				8B7CB9C214E460EB003DB51A /* ViewController.m */,
 				8B7CB9B014E460EA003DB51A /* Supporting Files */,
+				9CBA2C1F14E9BA13001C4F7C /* Constants.h */,
+				9CBA2C2014E9BA14001C4F7C /* Constants.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -619,9 +640,31 @@
 			path = Libraries/TestFlight;
 			sourceTree = SOURCE_ROOT;
 		};
+		9CBA2C0C14E9B5E0001C4F7C /* FlurryAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA2C0D14E9B5E0001C4F7C /* FlurryAnalytics.h */,
+				9CBA2C0E14E9B5E0001C4F7C /* libFlurryAnalytics.a */,
+			);
+			name = FlurryAnalytics;
+			path = Libraries/FlurryAnalytics;
+			sourceTree = SOURCE_ROOT;
+		};
+		9CBA2C1114E9B6C4001C4F7C /* ApSalar-3.1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA2C1214E9B6C4001C4F7C /* Apsalar.h */,
+				9CBA2C1314E9B6C4001C4F7C /* libApsalar.a */,
+			);
+			name = "ApSalar-3.1.0";
+			path = "Libraries/ApSalar-3.1.0";
+			sourceTree = SOURCE_ROOT;
+		};
 		9CBFE21214E4A1C200E6091F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				9CBA2C1114E9B6C4001C4F7C /* ApSalar-3.1.0 */,
+				9CBA2C0C14E9B5E0001C4F7C /* FlurryAnalytics */,
 				9C34919F14E990B600A6E2D0 /* TestFlight */,
 			);
 			name = Libraries;
@@ -845,6 +888,7 @@
 				73DC396F34721B6A92F14582E8B13605451A7E77F426FDE6 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
 				B6BF8DEE316EC1EBF05127C9E3DDF84631A9D360071ED1F4 /* MagicalRecordHelpers.m in Sources */,
 				CB88EA528B48C9B76EB9DF52E232D5CF890DEEFA7DFBEB49 /* MRCoreDataAction.m in Sources */,
+				9CBA2C2114E9BA14001C4F7C /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1125,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
+					"\"$(SRCROOT)/Libraries/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Libraries/ApSalar-3.1.0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1097,6 +1143,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
+					"\"$(SRCROOT)/Libraries/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Libraries/ApSalar-3.1.0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1139,6 +1187,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Libraries/TestFlight\"",
+					"\"$(SRCROOT)/Libraries/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Libraries/ApSalar-3.1.0\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
