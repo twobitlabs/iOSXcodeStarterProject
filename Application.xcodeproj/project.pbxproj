@@ -540,7 +540,7 @@
 		8B7CB99A14E460EA003DB51A = {
 			isa = PBXGroup;
 			children = (
-				8B7CB9AF14E460EA003DB51A /* Application */,
+				8B7CB9AF14E460EA003DB51A /* Classes */,
 				9CBFE21214E4A1C200E6091F /* Libraries */,
 				8B7CB9D014E460EB003DB51A /* Tests */,
 				8B7CB9A814E460EA003DB51A /* Frameworks */,
@@ -571,7 +571,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8B7CB9AF14E460EA003DB51A /* Application */ = {
+		8B7CB9AF14E460EA003DB51A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				8B7CB9B814E460EA003DB51A /* AppDelegate.h */,
@@ -582,7 +582,7 @@
 				8B7CB9C214E460EB003DB51A /* ViewController.m */,
 				8B7CB9B014E460EA003DB51A /* Supporting Files */,
 			);
-			path = Application;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		8B7CB9B014E460EA003DB51A /* Supporting Files */ = {
