@@ -77,6 +77,7 @@
 		8B7CB9BD14E460EA003DB51A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BB14E460EA003DB51A /* MainStoryboard_iPhone.storyboard */; };
 		8B7CB9C014E460EA003DB51A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BE14E460EA003DB51A /* MainStoryboard_iPad.storyboard */; };
 		8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7CB9C214E460EB003DB51A /* ViewController.m */; };
+		8BD1D76514EB2790006DC604 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */; };
 		8C0971B0ECF8527AD6B32486C00BBD82C154706F12D28B7E /* OCClassMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6ED0025020614523FB44A6D657934B8F38FEE81EF8B6E7 /* OCClassMockObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		8FFE498861AAD3B2A09F7228629A0AA15FB8693C7CC5622E /* OCMIndirectReturnValueProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 00401FB7985EB1F63BA77055A5C1FC31A27B96DC0479C9AD /* OCMIndirectReturnValueProvider.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		9066FA0651423596C953F06F5B6686E098E06E96D721CA62 /* EXPMatchers+toBeLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = FE87A24D2C3D051F9D7DF013E5C2D5DA8BA47B8970A78D03 /* EXPMatchers+toBeLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -278,6 +279,7 @@
 		8B7CB9C114E460EB003DB51A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8B7CB9C214E460EB003DB51A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8B7CB9CA14E460EB003DB51A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 		8CC656FC6F60EAD8453D345A366DCE84A853712C731C7366 /* AnalyticsKitLocalyitcsProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitLocalyitcsProvider.h; sourceTree = "<group>"; };
 		8F13772A47BB8850B905F4FDFF8DDC45469D33705ECD5BBA /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
 		8F7A8F7B746F46DF41FBBA4CA83AB966D3A8BD6E1A38250F /* EXPMatchers+toBeTruthy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+toBeTruthy.h"; sourceTree = "<group>"; };
@@ -589,6 +591,7 @@
 		9CBFE25514E4DF8000E6091F /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */,
 				9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */,
 				9CBFE25C14E4DF8000E6091F /* SomeUnitTest.m */,
 				9CBFE25614E4DF8000E6091F /* Supporting Files */,
@@ -983,6 +986,7 @@
 				925D2FCE8B1CFE830F7BA7F89825C7BB984B27E1A7427DAF /* SPTSenTestCase.m in Sources */,
 				35CF81E3937F969AD6E03CF74E7F727A011EC12DCF9743D0 /* SPTSenTestInvocation.m in Sources */,
 				E5B4C266BCC3440B79B3827B7DBBE00008BF41FE4708BAE4 /* SPTSpec.m in Sources */,
+				8BD1D76514EB2790006DC604 /* AppDelegateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

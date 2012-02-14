@@ -25,12 +25,13 @@
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureAnalyticsWithOptions:launchOptions];
+    [self configureCache];
+    [self configureAnalyticsWithOptions];
     return YES;
 }
 
--(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [self configureAnalyticsWithOptions:launchOptions];
-    return YES;
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
 }
 
 #pragma mark -
@@ -89,6 +90,25 @@ void analyticsExceptionHandler(NSException *exception) {
     // Track iOS version so we know when we can drop support for older versions
     NSDictionary *versDict = [NSDictionary dictionaryWithObject:[[UIDevice currentDevice] systemVersion] forKey:@"version"];
     [AnalyticsKit logEvent:@"App Started" withProperties:versDict];
+}
+
+#pragma mark -
+#pragma mark Activity Indicator
+
+- (void)setNetworkActivityIndicatorVisible:(BOOL)setVisible {
+    // http://oleb.net/blog/2009/09/managing-the-network-activity-indicator/
+    static NSInteger numberOfCallsToSetVisible = 0;
+    if (setVisible) 
+        numberOfCallsToSetVisible++;
+    else 
+        numberOfCallsToSetVisible--;
+    
+    // The assertion helps to find programmer errors in activity indicator management.
+#ifdef DEBUG
+    NSAssert(numberOfCallsToSetVisible >= 0, @"Network Activity Indicator was asked to hide more often than shown");
+#endif        
+    // Display the indicator as long as our static counter is > 0.
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:(numberOfCallsToSetVisible > 0)];
 }
 
 @end
