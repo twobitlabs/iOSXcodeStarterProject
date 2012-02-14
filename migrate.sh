@@ -7,6 +7,7 @@ read PROJECT_NAME
 rm -fr Libraries Tests Classes Application.xcodeproj
 rm -fr $PROJECT_NAME $PROJECT_NAME.xcodeproj
 
+# TODO: use TEMP = mktemp -d instead
 rm -rf /tmp/iOSXcodeStarterProject
 git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git /tmp/iOSXcodeStarterProject
 
