@@ -13,20 +13,23 @@
 
 @implementation SomeIntegrationTest
 
-- (void)setUp {
+-(void)setUp {
     [super setUp];
     
     // Set-up code here.
 }
 
-- (void)tearDown {
+-(void)tearDown {
     // Tear-down code here.
     
     [super tearDown];
 }
 
-- (void)testExample {
-    STFail(@"Unit tests are not implemented yet in Integration Tests");
+-(void)testExample {
+    id mockFoo = [OCMockObject mockForClass:[NSString class]];
+    [[[mockFoo stub] andReturn:@"foo"] lowercaseString];
+    
+    expect([mockFoo lowercaseString]).toEqual(@"foo");
 }
 
 @end
