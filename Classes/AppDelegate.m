@@ -13,6 +13,8 @@
 
 @interface AppDelegate ()
 
+-(void)configureUserAgent;
+-(void)configureCache;
 -(void)configureAnalyticsWithOptions:(NSDictionary *)launchOptions;
 
 @end
@@ -24,6 +26,31 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureAnalyticsWithOptions:launchOptions];
     return YES;
+}
+
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self configureAnalyticsWithOptions:launchOptions];
+    return YES;
+}
+
+#pragma mark -
+#pragma mark User Agent
+-(void)configureUserAgent {
+    // Append app name and version information to User Agent string
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];
+    NSString *secretAgent = [webView stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    if (secretAgent == nil || [secretAgent length] == 0) return;
+    NSString *newAgent = [NSString stringWithFormat: @"%@%@%@%@%@%@%@",
+                          secretAgent, 
+                          [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"],
+                          (TARGETED_DEVICE_IS_IPHONE) ? @" (iPhone " : @" (iPad ",
+                          [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"],
+                          @" ",
+                          [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"],
+                          @")"];
+    NSDictionary *agentDictionary = [NSDictionary dictionaryWithObjectsAndKeys: newAgent, @"UserAgent", nil];    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:agentDictionary];
+    NSLog(@"UA: %@", newAgent);    
 }
 	
 #pragma mark -

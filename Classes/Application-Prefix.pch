@@ -16,4 +16,5 @@
     #define MR_SHORTHAND
     #import "Constants.h"
     #import "AnalyticsKit.h"
+    #import "Macros.h"
 #endif
