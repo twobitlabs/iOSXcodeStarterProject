@@ -34,8 +34,6 @@ mv Application-Prefix.pch $PROJECT_NAME-Prefix.pch
 
 cd ..
 
-vendor install
-
 echo "Success! Launching $PROJECT_NAME"
 open $PROJECT_NAME.xcodeproj
 

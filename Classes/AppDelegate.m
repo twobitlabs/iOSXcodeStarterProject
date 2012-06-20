@@ -26,7 +26,6 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureAnalyticsWithOptions:launchOptions];
     [self configureCache];
-    [self configureAnalyticsWithOptions];
     return YES;
 }
 
