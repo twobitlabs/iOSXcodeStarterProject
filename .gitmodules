@@ -1,0 +1,18 @@
+[submodule "Libraries/TBMacros"]
+	path = Libraries/TBMacros
+	url = git://github.com/twobitlabs/TBMacros.git
+[submodule "Libraries/AnalyticsKit"]
+	path = Libraries/AnalyticsKit
+	url = git://github.com/twobitlabs/AnalyticsKit.git
+[submodule "Libraries/MagicalRecord"]
+	path = Libraries/MagicalRecord
+	url = git://github.com/magicalpanda/MagicalRecord.git
+[submodule "Libraries/OCMock"]
+	path = Libraries/OCMock
+	url = git://github.com/twobitlabs/ocmock.git
+[submodule "Libraries/Specta"]
+	path = Libraries/Specta
+	url = git://github.com/twobitlabs/specta.git
+[submodule "Libraries/Expecta"]
+	path = Libraries/Expecta
+	url = git://github.com/twobitlabs/expecta.git
