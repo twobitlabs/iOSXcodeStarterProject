@@ -7,17 +7,6 @@
 
 #import "AppDelegate.h"
 #import "AnalyticsKitTestFlightProvider.h"
-#import "AnalyticsKitFlurryProvider.h"
-#import "AnalyticsKitApsalarProvider.h"
-#import "AnalyticsKitLocalyitcsProvider.h"
-
-@interface AppDelegate ()
-
--(void)configureUserAgent;
--(void)configureCache;
--(void)configureAnalyticsWithOptions:(NSDictionary *)launchOptions;
-
-@end
 
 @implementation AppDelegate
 
@@ -26,6 +15,7 @@
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self configureAnalyticsWithOptions:launchOptions];
     [self configureCache];
+    [self addLowMemoryWarningsToSimulatorBuilds];
     return YES;
 }
 
@@ -34,7 +24,31 @@
 }
 
 #pragma mark -
+#pragma mark Cache
+
+- (void)configureCache {
+    // Create a new NSURLCache with 4MB RAM to reduce memory utilization
+    int cacheSizeMemory = 4*1024*1024; // 4MB
+    int cacheSizeDisk = 40*1024*1024; // 40MB
+    NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"];
+    [NSURLCache setSharedURLCache:sharedCache];
+}
+
+#pragma mark -
+#pragma mark Enable Memory Warngins in Simulator
+
+- (void)addLowMemoryWarningsToSimulatorBuilds {
+#if (TARGET_IPHONE_SIMULATOR) 
+    [[NSNotificationCenter defaultCenter] postNotificationName:UIApplicationDidReceiveMemoryWarningNotification object:[UIApplication sharedApplication]];
+    // Manually call applicationDidReceiveMemoryWarning
+    [[[UIApplication sharedApplication] delegate] applicationDidReceiveMemoryWarning:[UIApplication sharedApplication]];
+    [self performSelector:@selector(addLowMemoryWarningsToSimulatorBuilds) withObject:nil afterDelay:10];    
+#endif
+}
+
+#pragma mark -
 #pragma mark User Agent
+
 -(void)configureUserAgent {
     // Append app name and version information to User Agent string
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectZero];

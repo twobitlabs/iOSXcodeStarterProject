@@ -10,9 +10,6 @@
 [submodule "Libraries/OCMock"]
 	path = Libraries/OCMock
 	url = git://github.com/twobitlabs/ocmock.git
-[submodule "Libraries/Specta"]
-	path = Libraries/Specta
-	url = git://github.com/twobitlabs/specta.git
-[submodule "Libraries/Expecta"]
-	path = Libraries/Expecta
-	url = git://github.com/twobitlabs/expecta.git
+[submodule "Libraries/TestFlightSDK"]
+	path = Libraries/TestFlightSDK
+	url = https://github.com/twobitlabs/TestFlight-SDK.git
