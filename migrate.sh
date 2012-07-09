@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-if [ "${BASH_SOURCE[0]}" == "" ]; then
+if [[ "${BASH_SOURCE[0]}" == "" || "${BASH_SOURCE[0]}" == "/dev"* ]] ; then
 	RUNNING_LOCALLY=false
 	TMPDIR=`mktemp -d /tmp/ios-starter.XXXXXX`	
 else
@@ -13,7 +13,7 @@ echo -n "Application Name (e.g. 'MyApplication' with no spaces will be created i
 read PROJECT_NAME
 mkdir "$PROJECT_NAME"
 
-if ! $RUNNING_LOCALLY; then
+if ! $RUNNING_LOCALLY ; then
 	git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git $TMPDIR
 fi
 cd "$PROJECT_NAME"
@@ -22,7 +22,6 @@ cp -fr $TMPDIR/Tests \
 $TMPDIR/Classes \
 $TMPDIR/Application.xcodeproj \
 $TMPDIR/.gitignore \
-$TMPDIR/.gitmodules \
 $TMPDIR/Libraries \
 .
 
@@ -45,10 +44,19 @@ mv Application-Debug-Info.plist $PROJECT_NAME-Debug-Info.plist
 mv Application-Prefix.pch $PROJECT_NAME-Prefix.pch
 cd ..
 
+# Remove all empty library directories (which contain the placeholders for submodules)
+cd Libraries
+find . -type d -empty -exec rmdir {} \;
+cd ..
+
 git init .
+git submodule add git://github.com/twobitlabs/TBMacros.git Libraries/TBMacros
+git submodule add git://github.com/twobitlabs/AnalyticsKit.git Libraries/AnalyticsKit
+git submodule add git://github.com/twobitlabs/MagicalRecord.git Libraries/MagicalRecord
+git submodule add git://github.com/twobitlabs/ocmock.git Libraries/OCMock
+git submodule add git://github.com/twobitlabs/TestFlight-SDK.git Libraries/TestFlightSDK
 git add .
 git commit -a -m "Initial Commit"
-git submodule update --init --recursive
 
 if ! $RUNNING_LOCALLY ; then
 	rm -rf $TMPDIR
