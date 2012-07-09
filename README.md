@@ -6,9 +6,11 @@ An iOS Starter Project configured for unit/functional testing and analytics that
 
 * ARC enabled with Storyboards 
 * Univesal app to support both iPhone and iPad
-* [AnalyticsKit](https://github.com/twobitlabs/AnalyticsKit) to support optional integration of analytics providers like TestFlight, Flurry, Apsalar, Localytics, etc... Only the TestFlight SDK is included by default.
+* A sensible Xcode .gitignore file that works well for multi-person teams
 * Libraries are includes as git submodules so you can keep pull in the latest versions
+* [AnalyticsKit](https://github.com/twobitlabs/AnalyticsKit) to support optional integration of analytics providers like TestFlight, Flurry, Apsalar, Localytics, etc... Only the TestFlight SDK is included by default.
 * Specta, Expecta, and OCMock to support TDD and BDD style iOS Development with Mock objects
+* Example test/spec files to show you how to get started testing
 * Seperate unit test and functional test target to separate out fast running tests from slow running tests
 * MagicalRecord which makes working with Core Data enjoyable
 * Development, Debug, and Release configurations (with support for multiple app id's) so you can install both the developemnt and release versions of the app on your devices side by side
@@ -23,6 +25,10 @@ An iOS Starter Project configured for unit/functional testing and analytics that
 cd ~/src # the parent directory you want your new Xcode project created in
 bash -e <(curl -Lo- http://bit.ly/ios-starter-project)
 ```
+
+### TODO
+
+* Document setting up the functional test scheme after the project is created
 
 ### Contributors
 

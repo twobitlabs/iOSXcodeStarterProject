@@ -35,7 +35,12 @@ sed -i "" s/Application-Debug-Info.plist/$PROJECT_NAME-Debug-Info.plist/g Applic
 sed -i "" s/Application-Prefix.pch/$PROJECT_NAME-Prefix.pch/g Application.xcodeproj/project.pbxproj
 sed -i "" "s/= Application/= $PROJECT_NAME/g" Application.xcodeproj/project.pbxproj
 
-mv -f Application.xcodeproj $PROJECT_NAME.xcodeproj
+mv -f Application.xcodeproj "$PROJECT_NAME.xcodeproj"
+cd "$PROJECT_NAME.xcodeproj"
+rm -rf xcuserdata
+rm -rf project.xcworkspace/xcuserdata
+cd ..
+
 
 cd Classes
 mv Application-Info.plist $PROJECT_NAME-Info.plist
