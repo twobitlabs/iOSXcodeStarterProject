@@ -26,6 +26,14 @@ cd ~/src # the parent directory you want your new Xcode project created in
 bash -e <(curl -Lo- http://bit.ly/ios-starter-project)
 ```
 
+OR if you've cloned the iOSXcodeStarterProject github repo locally you can just run the script
+
+```bash
+cd ~/src # the parent directory you want your new Xcode project created in
+/path/to/iOSXcodeStarterProject/migrate.sh
+```
+
+
 ### TODO
 
 * Document setting up the functional test scheme after the project is created
