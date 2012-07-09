@@ -3,16 +3,17 @@ echo
 echo -n "Application Name (e.g. 'MyApplication' with no spaces)? "
 read PROJECT_NAME
 mkdir "$PROJECT_NAME"
-cd "$PROJECT_NAME"
 
 TMPDIR=`mktemp -d /tmp/ios-starter.XXXXXX`
-git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git /tmp/$TMPDIR
+git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git $TMPDIR
+cd "$PROJECT_NAME"
 
-cp -fr /tmp/$TMPDIR/Tests \
-/tmp/$TMPDIR/Classes \
-/tmp/$TMPDIR/Application.xcodeproj \
-/tmp/$TMPDIR/.gitignore \
-/tmp/$TMPDIR/Libraries \
+cp -fr $TMPDIR/Tests \
+$TMPDIR/Classes \
+$TMPDIR/Application.xcodeproj \
+$TMPDIR/.gitignore \
+$TMPDIR/.gitmodules \
+$TMPDIR/Libraries \
 .
 
 sed -i "" s/Application.app\\/Application/$PROJECT_NAME.app\\/$PROJECT_NAME/g Application.xcodeproj/project.pbxproj
@@ -32,6 +33,12 @@ mv Application-Info.plist $PROJECT_NAME-Info.plist
 mv Application-Dev-Info.plist $PROJECT_NAME-Dev-Info.plist
 mv Application-Debug-Info.plist $PROJECT_NAME-Debug-Info.plist
 mv Application-Prefix.pch $PROJECT_NAME-Prefix.pch
+cd ..
+
+git init .
+git add .
+git commit -a -m "Initial Commit"
+git submodule update --init --recursive
 
 rm -rf $TMPDIR
 
