@@ -51,7 +51,7 @@ cd ..
 
 # Remove all empty library directories (which contain the placeholders for submodules)
 cd Libraries
-find . -type d -empty -exec rmdir {} \;
+find . -type d -empty -delete
 cd ..
 
 git init .
