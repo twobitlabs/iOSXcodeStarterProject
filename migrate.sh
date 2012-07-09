@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -n "Rename project to what? "
+echo -n "Application Name (e.g. 'My Application')? "
 read PROJECT_NAME
 
 # remove previously migrated directories
