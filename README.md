@@ -20,9 +20,7 @@ An iOS Starter Project configured for unit/functional testing and analytics that
 
 ```bash
 cd ~/src # or wherever you keep your code
-git://github.com/twobitlabs/iOSXcodeStarterProject.git
-cd iOSXcodeStarterProject
-./migrate.sh # this will ask you for a project name and app id and create a new project tree for you)
+bash <(curl -Lo- http://bit.ly/ios-starter-project)
 ```
 
 ### Contributors

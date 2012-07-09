@@ -1,17 +1,19 @@
-#!/bin/bash
-
-echo -n "Application Name (e.g. 'My Application')? "
+#!/bin/bash -e
+echo
+echo -n "Application Name (e.g. 'MyApplication' with no spaces)? "
 read PROJECT_NAME
+mkdir "$PROJECT_NAME"
+cd "$PROJECT_NAME"
 
-# remove previously migrated directories
-rm -fr Libraries Tests Classes Application.xcodeproj
-rm -fr $PROJECT_NAME $PROJECT_NAME.xcodeproj
+TMPDIR=`mktemp -d /tmp/ios-starter.XXXXXX`
+git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git /tmp/$TMPDIR
 
-# TODO: use TEMP = mktemp -d instead
-rm -rf /tmp/iOSXcodeStarterProject
-git clone git@github.com:twobitlabs/iOSXcodeStarterProject.git /tmp/iOSXcodeStarterProject
-
-cp -fr /tmp/iOSXcodeStarterProject/Tests /tmp/iOSXcodeStarterProject/Classes /tmp/iOSXcodeStarterProject/Application.xcodeproj /tmp/iOSXcodeStarterProject/.gitignore /tmp/iOSXcodeStarterProject/Vendorfile /tmp/iOSXcodeStarterProject/Libraries .
+cp -fr /tmp/$TMPDIR/Tests \
+/tmp/$TMPDIR/Classes \
+/tmp/$TMPDIR/Application.xcodeproj \
+/tmp/$TMPDIR/.gitignore \
+/tmp/$TMPDIR/Libraries \
+.
 
 sed -i "" s/Application.app\\/Application/$PROJECT_NAME.app\\/$PROJECT_NAME/g Application.xcodeproj/project.pbxproj
 sed -i "" s/Application.app/$PROJECT_NAME.app/g Application.xcodeproj/project.pbxproj
@@ -22,7 +24,6 @@ sed -i "" s/Application-Dev-Info.plist/$PROJECT_NAME-Dev-Info.plist/g Applicatio
 sed -i "" s/Application-Debug-Info.plist/$PROJECT_NAME-Debug-Info.plist/g Application.xcodeproj/project.pbxproj
 sed -i "" s/Application-Prefix.pch/$PROJECT_NAME-Prefix.pch/g Application.xcodeproj/project.pbxproj
 sed -i "" "s/= Application/= $PROJECT_NAME/g" Application.xcodeproj/project.pbxproj
-sed -i "" s/Application/$PROJECT_NAME/g Vendorfile
 
 mv -f Application.xcodeproj $PROJECT_NAME.xcodeproj
 
@@ -32,7 +33,7 @@ mv Application-Dev-Info.plist $PROJECT_NAME-Dev-Info.plist
 mv Application-Debug-Info.plist $PROJECT_NAME-Debug-Info.plist
 mv Application-Prefix.pch $PROJECT_NAME-Prefix.pch
 
-cd ..
+rm -rf $TMPDIR
 
 echo "Success! Launching $PROJECT_NAME"
 open $PROJECT_NAME.xcodeproj
