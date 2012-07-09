@@ -79,7 +79,7 @@
 		9CBFE26914E4DF9400E6091F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9A914E460EA003DB51A /* UIKit.framework */; };
 		9CBFE26A14E4DF9400E6091F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9AB14E460EA003DB51A /* Foundation.framework */; };
 		9CBFE27014E4DF9400E6091F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBFE26E14E4DF9400E6091F /* InfoPlist.strings */; };
-		9CBFE27314E4DF9400E6091F /* SomeIntegrationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE27214E4DF9400E6091F /* SomeIntegrationTest.m */; };
+		9CBFE27314E4DF9400E6091F /* SomeFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,7 +248,7 @@
 		9CBFE26714E4DF9400E6091F /* Integration Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integration Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBFE26D14E4DF9400E6091F /* Integration Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Integration Tests-Info.plist"; sourceTree = "<group>"; };
 		9CBFE26F14E4DF9400E6091F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9CBFE27214E4DF9400E6091F /* SomeIntegrationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeIntegrationTest.m; sourceTree = "<group>"; };
+		9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeFunctionalTest.m; sourceTree = "<group>"; };
 		9CBFE27414E4DF9400E6091F /* Integration Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Integration Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -577,7 +577,7 @@
 				9CBFE23614E4DE1000E6091F /* BaseTestCase.h */,
 				9CBFE23714E4DE1000E6091F /* BaseTestCase.m */,
 				9CBFE25514E4DF8000E6091F /* Unit Tests */,
-				9CBFE26B14E4DF9400E6091F /* Integration Tests */,
+				9CBFE26B14E4DF9400E6091F /* Functional Tests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -618,12 +618,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9CBFE26B14E4DF9400E6091F /* Integration Tests */ = {
+		9CBFE26B14E4DF9400E6091F /* Functional Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9CBFE27214E4DF9400E6091F /* SomeIntegrationTest.m */,
+				9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */,
 				9CBFE26C14E4DF9400E6091F /* Supporting Files */,
 			);
+			name = "Functional Tests";
 			path = "Integration Tests";
 			sourceTree = "<group>";
 		};
@@ -676,9 +677,9 @@
 			productReference = 9CBFE25114E4DF8000E6091F /* Unit Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
-		9CBFE26614E4DF9400E6091F /* Integration Tests */ = {
+		9CBFE26614E4DF9400E6091F /* Functional Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CBFE27514E4DF9400E6091F /* Build configuration list for PBXNativeTarget "Integration Tests" */;
+			buildConfigurationList = 9CBFE27514E4DF9400E6091F /* Build configuration list for PBXNativeTarget "Functional Tests" */;
 			buildPhases = (
 				9CBFE26214E4DF9400E6091F /* Sources */,
 				9CBFE26314E4DF9400E6091F /* Frameworks */,
@@ -690,7 +691,7 @@
 			dependencies = (
 				9CBFE27B14E4E01200E6091F /* PBXTargetDependency */,
 			);
-			name = "Integration Tests";
+			name = "Functional Tests";
 			productName = "Integration Tests";
 			productReference = 9CBFE26714E4DF9400E6091F /* Integration Tests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -718,7 +719,7 @@
 			targets = (
 				8B7CB9A414E460EA003DB51A /* Application */,
 				9CBFE25014E4DF8000E6091F /* Unit Tests */,
-				9CBFE26614E4DF9400E6091F /* Integration Tests */,
+				9CBFE26614E4DF9400E6091F /* Functional Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -846,7 +847,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBFE27314E4DF9400E6091F /* SomeIntegrationTest.m in Sources */,
+				9CBFE27314E4DF9400E6091F /* SomeFunctionalTest.m in Sources */,
 				9C5BDFBE14E4E1FF00A17A6A /* BaseTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1268,7 +1269,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CBFE27514E4DF9400E6091F /* Build configuration list for PBXNativeTarget "Integration Tests" */ = {
+		9CBFE27514E4DF9400E6091F /* Build configuration list for PBXNativeTarget "Functional Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CBFE27614E4DF9400E6091F /* Debug */,

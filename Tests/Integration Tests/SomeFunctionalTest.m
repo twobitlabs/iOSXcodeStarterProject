@@ -8,14 +8,13 @@
 
 #import "BaseTestCase.h"
 
-@interface SomeIntegrationTest : BaseTestCase
+@interface SomeFunctionalTests : BaseTestCase
 @end
 
-@implementation SomeIntegrationTest
+@implementation SomeFunctionalTests
 
 -(void)setUp {
-    [super setUp];
-    
+    [super setUp];    
     // Set-up code here.
 }
 
