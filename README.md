@@ -1,6 +1,6 @@
 # iOS Xcode Starter Project
 
-An iOS Starter Project configured for unit/functional testing and analytics that we use to start our pjects at  [Two Bit Labs](http://twobitlabs.com)
+An iOS Starter Project configured for unit/functional testing and analytics that we use to start our projects at  [Two Bit Labs](http://twobitlabs.com)
 
 ### Features
 
