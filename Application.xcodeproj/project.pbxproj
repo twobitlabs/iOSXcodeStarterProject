@@ -245,7 +245,7 @@
 		9CBFE25914E4DF8000E6091F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBFE25C14E4DF8000E6091F /* SomeUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeUnitTest.m; sourceTree = "<group>"; };
 		9CBFE25E14E4DF8000E6091F /* Unit Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unit Tests-Prefix.pch"; sourceTree = "<group>"; };
-		9CBFE26714E4DF9400E6091F /* Integration Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integration Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBFE26714E4DF9400E6091F /* Integration Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Integration Tests.octest"; path = "Functional Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBFE26D14E4DF9400E6091F /* Integration Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Integration Tests-Info.plist"; sourceTree = "<group>"; };
 		9CBFE26F14E4DF9400E6091F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeFunctionalTest.m; sourceTree = "<group>"; };
@@ -702,7 +702,7 @@
 		8B7CB99C14E460EA003DB51A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Two Bit Labs";
 			};
 			buildConfigurationList = 8B7CB99F14E460EA003DB51A /* Build configuration list for PBXProject "Application" */;
