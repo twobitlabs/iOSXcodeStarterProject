@@ -82,9 +82,20 @@ void analyticsExceptionHandler(NSException *exception) {
 }
 
 -(void)configureAnalyticsWithOptions:(NSDictionary *)launchOptions {
-#if (!TARGET_IPHONE_SIMULATOR)
     NSMutableArray *providers = [NSMutableArray array];
-
+    #ifdef DEBUG
+        // Debug provider pops a UIAlertView when an error is logged
+        [providers addObject:[[AnalyticsKitDebug alloc] init]];
+    #endif
+    
+    #if (!TARGET_IPHONE_SIMULATOR)
+        #ifdef DEBUG
+            // Debug provider pops a UIAlertView when an error is logged
+            [providers addObject:[[AnalyticsKitDebug alloc] init]];
+            // Setup TestFlight provider
+            NSString *testFlightKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:TESTFLIGHT_KEY];
+            [providers addObject:[[AnalyticsKitTestFlightProvider alloc] initWithAPIKey:testFlightKey]];
+        #endif
 //    NSString *flurryKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:FLURRY_KEY];
 //    [providers addObject:[[AnalyticsKitFlurryProvider alloc] initWithAPIKey:flurryKey]];
     
@@ -93,17 +104,9 @@ void analyticsExceptionHandler(NSException *exception) {
 //    [providers addObject:[[AnalyticsKitApsalarProvider alloc] initWithAPIKey:apsalarKey andSecret:apsalarSecret andLaunchOptions:launchOptions]]; 
     
 //    NSString *localyticsKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:LOCALYTICS_KEY];
-//    [providers addObject:[[AnalyticsKitLocalyitcsProvider alloc] initWithAPIKey:localyticsKey]]; 
-    
-#ifdef DEBUG
-    [providers addObject:[[AnalyticsKitDebug alloc] init]];
-    
-    NSString *testFlightKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:TESTFLIGHT_KEY];
-    [providers addObject:[[AnalyticsKitTestFlightProvider alloc] initWithAPIKey:testFlightKey]];
-#endif
-    
+//    [providers addObject:[[AnalyticsKitLocalyitcsProvider alloc] initWithAPIKey:localyticsKey]];
+    #endif
     [AnalyticsKit initializeLoggers:providers];
-#endif
 
     //initialize AnalyticsKit to send messages to Flurry and TestFlight
     NSSetUncaughtExceptionHandler(&analyticsExceptionHandler);
