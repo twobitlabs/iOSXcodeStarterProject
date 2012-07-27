@@ -8,12 +8,14 @@
 #import "AppDelegate.h"
 #import "AnalyticsKitDebug.h"
 #import "AnalyticsKitTestFlightProvider.h"
+#import "MagicalRecord.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [MagicalRecord setupAutoMigratingCoreDataStack];
     [self configureAnalyticsWithOptions:launchOptions];
     [self configureCache];
     [self addLowMemoryWarningsToSimulatorBuilds];
@@ -22,6 +24,10 @@
 
 -(void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
+}
+
+-(void)applicationWillTerminate:(UIApplication *)application {
+    [MagicalRecord cleanUp];
 }
 
 #pragma mark -
