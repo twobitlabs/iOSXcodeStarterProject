@@ -702,7 +702,7 @@
 		8B7CB99C14E460EA003DB51A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Two Bit Labs";
 			};
 			buildConfigurationList = 8B7CB99F14E460EA003DB51A /* Build configuration list for PBXProject "Application" */;
