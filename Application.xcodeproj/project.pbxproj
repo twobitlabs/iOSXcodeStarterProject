@@ -62,6 +62,9 @@
 		8B7CB9C014E460EA003DB51A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BE14E460EA003DB51A /* MainStoryboard_iPad.storyboard */; };
 		8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7CB9C214E460EB003DB51A /* ViewController.m */; };
 		8BD1D76514EB2790006DC604 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */; };
+		9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7516365310006A6E3F /* NSDate+TBL.m */; };
+		9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7716365310006A6E3F /* NSString+TBL.m */; };
+		9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7A16365310006A6E3F /* UIView+TBL.m */; };
 		9C5BDFBD14E4E1FE00A17A6A /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE23714E4DE1000E6091F /* BaseTestCase.m */; };
 		9C5BDFBE14E4E1FF00A17A6A /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE23714E4DE1000E6091F /* BaseTestCase.m */; };
 		9C7E972414E4EAC5008DA5D5 /* SomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */; };
@@ -229,6 +232,13 @@
 		8B7CB9C214E460EB003DB51A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8B7CB9CA14E460EB003DB51A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
+		9C025F7416365310006A6E3F /* NSDate+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TBL.h"; sourceTree = "<group>"; };
+		9C025F7516365310006A6E3F /* NSDate+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TBL.m"; sourceTree = "<group>"; };
+		9C025F7616365310006A6E3F /* NSString+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBL.h"; sourceTree = "<group>"; };
+		9C025F7716365310006A6E3F /* NSString+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TBL.m"; sourceTree = "<group>"; };
+		9C025F7816365310006A6E3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9C025F7916365310006A6E3F /* UIView+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBL.h"; sourceTree = "<group>"; };
+		9C025F7A16365310006A6E3F /* UIView+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBL.m"; sourceTree = "<group>"; };
 		9C34919D14E9901000A6E2D0 /* Application-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application-Debug-Info.plist"; sourceTree = "<group>"; };
 		9C34919E14E9901000A6E2D0 /* Application-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application-Dev-Info.plist"; sourceTree = "<group>"; };
 		9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeSpec.m; sourceTree = "<group>"; };
@@ -582,6 +592,21 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		9C025F7316365310006A6E3F /* TBLCategories */ = {
+			isa = PBXGroup;
+			children = (
+				9C025F7416365310006A6E3F /* NSDate+TBL.h */,
+				9C025F7516365310006A6E3F /* NSDate+TBL.m */,
+				9C025F7616365310006A6E3F /* NSString+TBL.h */,
+				9C025F7716365310006A6E3F /* NSString+TBL.m */,
+				9C025F7816365310006A6E3F /* README.md */,
+				9C025F7916365310006A6E3F /* UIView+TBL.h */,
+				9C025F7A16365310006A6E3F /* UIView+TBL.m */,
+			);
+			name = TBLCategories;
+			path = Libraries/TBLCategories;
+			sourceTree = SOURCE_ROOT;
+		};
 		9CBFE21214E4A1C200E6091F /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +615,7 @@
 				8B52D61C15AA34AD00C72217 /* OCMock */,
 				8B52D41A15AA2D2100C72217 /* MagicalRecord */,
 				8B01DE87159151FF00B841A2 /* TBMacros */,
+				9C025F7316365310006A6E3F /* TBLCategories */,
 				8B01DD1B159151E100B841A2 /* AnalyticsKit */,
 				8B52D41215AA2CC900C72217 /* TestFlightSDK */,
 			);
@@ -829,6 +855,9 @@
 				8B52D46D15AA2D2100C72217 /* MagicalRecord+Setup.m in Sources */,
 				8B52D46E15AA2D2100C72217 /* MagicalRecord+ShorthandSupport.m in Sources */,
 				8B52D46F15AA2D2100C72217 /* MagicalRecord.m in Sources */,
+				9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */,
+				9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */,
+				9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

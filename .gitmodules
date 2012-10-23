@@ -13,3 +13,6 @@
 [submodule "Libraries/TestFlightSDK"]
 	path = Libraries/TestFlightSDK
 	url = https://github.com/twobitlabs/TestFlight-SDK.git
+[submodule "Libraries/TBLCategories"]
+	path = Libraries/TBLCategories
+	url = git@github.com:twobitlabs/TBLCategories.git
