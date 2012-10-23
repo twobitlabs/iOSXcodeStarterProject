@@ -65,6 +65,7 @@
 		9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7516365310006A6E3F /* NSDate+TBL.m */; };
 		9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7716365310006A6E3F /* NSString+TBL.m */; };
 		9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7A16365310006A6E3F /* UIView+TBL.m */; };
+		9C025F9616365FCE006A6E3F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C025F9416365FBA006A6E3F /* QuartzCore.framework */; };
 		9C5BDFBD14E4E1FE00A17A6A /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE23714E4DE1000E6091F /* BaseTestCase.m */; };
 		9C5BDFBE14E4E1FF00A17A6A /* BaseTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE23714E4DE1000E6091F /* BaseTestCase.m */; };
 		9C7E972414E4EAC5008DA5D5 /* SomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */; };
@@ -239,6 +240,7 @@
 		9C025F7816365310006A6E3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		9C025F7916365310006A6E3F /* UIView+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TBL.h"; sourceTree = "<group>"; };
 		9C025F7A16365310006A6E3F /* UIView+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TBL.m"; sourceTree = "<group>"; };
+		9C025F9416365FBA006A6E3F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9C34919D14E9901000A6E2D0 /* Application-Debug-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application-Debug-Info.plist"; sourceTree = "<group>"; };
 		9C34919E14E9901000A6E2D0 /* Application-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Application-Dev-Info.plist"; sourceTree = "<group>"; };
 		9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeSpec.m; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				9CBA2C1A14E9B726001C4F7C /* SystemConfiguration.framework in Frameworks */,
 				9C9E279514E9D60B005D848C /* libz.dylib in Frameworks */,
 				8B52D41715AA2CC900C72217 /* libTestFlight.a in Frameworks */,
+				9C025F9616365FCE006A6E3F /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +543,7 @@
 		8B7CB9A814E460EA003DB51A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C025F9416365FBA006A6E3F /* QuartzCore.framework */,
 				9C9E279314E9D5FB005D848C /* libz.dylib */,
 				9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */,
 				9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */,
