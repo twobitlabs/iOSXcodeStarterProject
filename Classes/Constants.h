@@ -1,9 +1,5 @@
 //
 //  Constants.h
-//  Application
-//
-//  Created by Christopher Pickslay on 2/13/12.
-//  Copyright (c) 2012 Two Bit Labs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
