@@ -47,4 +47,5 @@ Add your name here if you send us a pull request
 * [Todd Huss](http://twobitlabs.com)
 * [Christopher Pickslay](http://twobitlabs.com)
 * [Susan Detwiler](http://twobitlabs.com)
+* [Paul Booth](https://github.com/paulb00th)
 
