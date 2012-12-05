@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B01DD3D159151E100B841A2 /* AnalyticsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD1D159151E100B841A2 /* AnalyticsKit.m */; };
-		8B01DD40159151E100B841A2 /* AnalyticsKitDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */; };
-		8B01DD43159151E100B841A2 /* AnalyticsKitTestFlightProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */; };
-		8B01DD44159151E100B841A2 /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD29159151E100B841A2 /* MIT-LICENSE */; };
-		8B01DD4B159151E100B841A2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD3C159151E100B841A2 /* README.md */; };
 		8B01DE8A159151FF00B841A2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DE89159151FF00B841A2 /* README */; };
 		8B52D41715AA2CC900C72217 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52D41315AA2CC900C72217 /* libTestFlight.a */; };
 		8B52D41815AA2CC900C72217 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B52D41415AA2CC900C72217 /* README.txt */; };
@@ -84,6 +79,14 @@
 		9CBFE26A14E4DF9400E6091F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7CB9AB14E460EA003DB51A /* Foundation.framework */; };
 		9CBFE27014E4DF9400E6091F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBFE26E14E4DF9400E6091F /* InfoPlist.strings */; };
 		9CBFE27314E4DF9400E6091F /* SomeFunctionalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */; };
+		DA560072166FC0A300CA56EC /* AnalyticsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA56005E166FC0A300CA56EC /* AnalyticsKit.m */; };
+		DA560073166FC0A300CA56EC /* AnalyticsKit.vendorspec in Resources */ = {isa = PBXBuildFile; fileRef = DA56005F166FC0A300CA56EC /* AnalyticsKit.vendorspec */; };
+		DA560075166FC0A300CA56EC /* AnalyticsKitDebugProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA560063166FC0A300CA56EC /* AnalyticsKitDebugProvider.m */; };
+		DA560076166FC0A300CA56EC /* AnalyticsKitEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DA560065166FC0A300CA56EC /* AnalyticsKitEvent.m */; };
+		DA56007A166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA56006D166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.m */; };
+		DA56007B166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DA56006F166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.m */; };
+		DA56007C166FC0A300CA56EC /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DA560070166FC0A300CA56EC /* MIT-LICENSE */; };
+		DA56007D166FC0A300CA56EC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA560071166FC0A300CA56EC /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,14 +107,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B01DD1C159151E100B841A2 /* AnalyticsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKit.h; sourceTree = "<group>"; };
-		8B01DD1D159151E100B841A2 /* AnalyticsKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKit.m; sourceTree = "<group>"; };
-		8B01DD21159151E100B841A2 /* AnalyticsKitDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitDebug.h; sourceTree = "<group>"; };
-		8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitDebug.m; sourceTree = "<group>"; };
-		8B01DD27159151E100B841A2 /* AnalyticsKitTestFlightProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitTestFlightProvider.h; sourceTree = "<group>"; };
-		8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitTestFlightProvider.m; sourceTree = "<group>"; };
-		8B01DD29159151E100B841A2 /* MIT-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE"; sourceTree = "<group>"; };
-		8B01DD3C159151E100B841A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B01DE88159151FF00B841A2 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8B01DE89159151FF00B841A2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8B52D41315AA2CC900C72217 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
@@ -262,6 +257,19 @@
 		9CBFE26F14E4DF9400E6091F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBFE27214E4DF9400E6091F /* SomeFunctionalTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeFunctionalTest.m; sourceTree = "<group>"; };
 		9CBFE27414E4DF9400E6091F /* Integration Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Integration Tests-Prefix.pch"; sourceTree = "<group>"; };
+		DA56005D166FC0A300CA56EC /* AnalyticsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKit.h; sourceTree = "<group>"; };
+		DA56005E166FC0A300CA56EC /* AnalyticsKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKit.m; sourceTree = "<group>"; };
+		DA56005F166FC0A300CA56EC /* AnalyticsKit.vendorspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnalyticsKit.vendorspec; sourceTree = "<group>"; };
+		DA560062166FC0A300CA56EC /* AnalyticsKitDebugProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitDebugProvider.h; sourceTree = "<group>"; };
+		DA560063166FC0A300CA56EC /* AnalyticsKitDebugProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitDebugProvider.m; sourceTree = "<group>"; };
+		DA560064166FC0A300CA56EC /* AnalyticsKitEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitEvent.h; sourceTree = "<group>"; };
+		DA560065166FC0A300CA56EC /* AnalyticsKitEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitEvent.m; sourceTree = "<group>"; };
+		DA56006C166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitTestFlightProvider.h; sourceTree = "<group>"; };
+		DA56006D166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitTestFlightProvider.m; sourceTree = "<group>"; };
+		DA56006E166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitUnitTestProvider.h; sourceTree = "<group>"; };
+		DA56006F166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitUnitTestProvider.m; sourceTree = "<group>"; };
+		DA560070166FC0A300CA56EC /* MIT-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE"; sourceTree = "<group>"; };
+		DA560071166FC0A300CA56EC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,14 +321,19 @@
 		8B01DD1B159151E100B841A2 /* AnalyticsKit */ = {
 			isa = PBXGroup;
 			children = (
-				8B01DD1C159151E100B841A2 /* AnalyticsKit.h */,
-				8B01DD1D159151E100B841A2 /* AnalyticsKit.m */,
-				8B01DD21159151E100B841A2 /* AnalyticsKitDebug.h */,
-				8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */,
-				8B01DD27159151E100B841A2 /* AnalyticsKitTestFlightProvider.h */,
-				8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */,
-				8B01DD29159151E100B841A2 /* MIT-LICENSE */,
-				8B01DD3C159151E100B841A2 /* README.md */,
+				DA56005D166FC0A300CA56EC /* AnalyticsKit.h */,
+				DA56005E166FC0A300CA56EC /* AnalyticsKit.m */,
+				DA56005F166FC0A300CA56EC /* AnalyticsKit.vendorspec */,
+				DA560062166FC0A300CA56EC /* AnalyticsKitDebugProvider.h */,
+				DA560063166FC0A300CA56EC /* AnalyticsKitDebugProvider.m */,
+				DA560064166FC0A300CA56EC /* AnalyticsKitEvent.h */,
+				DA560065166FC0A300CA56EC /* AnalyticsKitEvent.m */,
+				DA56006C166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.h */,
+				DA56006D166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.m */,
+				DA56006E166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.h */,
+				DA56006F166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.m */,
+				DA560070166FC0A300CA56EC /* MIT-LICENSE */,
+				DA560071166FC0A300CA56EC /* README.md */,
 			);
 			name = AnalyticsKit;
 			path = Libraries/AnalyticsKit;
@@ -762,11 +775,12 @@
 				8B7CB9B414E460EA003DB51A /* InfoPlist.strings in Resources */,
 				8B7CB9BD14E460EA003DB51A /* MainStoryboard_iPhone.storyboard in Resources */,
 				8B7CB9C014E460EA003DB51A /* MainStoryboard_iPad.storyboard in Resources */,
-				8B01DD44159151E100B841A2 /* MIT-LICENSE in Resources */,
-				8B01DD4B159151E100B841A2 /* README.md in Resources */,
 				8B01DE8A159151FF00B841A2 /* README in Resources */,
 				8B52D41815AA2CC900C72217 /* README.txt in Resources */,
 				8B52D41915AA2CC900C72217 /* release_notes.txt in Resources */,
+				DA560073166FC0A300CA56EC /* AnalyticsKit.vendorspec in Resources */,
+				DA56007C166FC0A300CA56EC /* MIT-LICENSE in Resources */,
+				DA56007D166FC0A300CA56EC /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,9 +844,6 @@
 				8B7CB9BA14E460EA003DB51A /* AppDelegate.m in Sources */,
 				8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */,
 				9CBA2C2114E9BA14001C4F7C /* Constants.m in Sources */,
-				8B01DD3D159151E100B841A2 /* AnalyticsKit.m in Sources */,
-				8B01DD40159151E100B841A2 /* AnalyticsKitDebug.m in Sources */,
-				8B01DD43159151E100B841A2 /* AnalyticsKitTestFlightProvider.m in Sources */,
 				8B52D45615AA2D2100C72217 /* MagicalImportFunctions.m in Sources */,
 				8B52D45715AA2D2100C72217 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
 				8B52D45815AA2D2100C72217 /* NSEntityDescription+MagicalDataImport.m in Sources */,
@@ -862,6 +873,11 @@
 				9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */,
 				9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */,
 				9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */,
+				DA560072166FC0A300CA56EC /* AnalyticsKit.m in Sources */,
+				DA560075166FC0A300CA56EC /* AnalyticsKitDebugProvider.m in Sources */,
+				DA560076166FC0A300CA56EC /* AnalyticsKitEvent.m in Sources */,
+				DA56007A166FC0A300CA56EC /* AnalyticsKitTestFlightProvider.m in Sources */,
+				DA56007B166FC0A300CA56EC /* AnalyticsKitUnitTestProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
