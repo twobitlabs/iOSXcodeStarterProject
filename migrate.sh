@@ -56,6 +56,7 @@ cd ..
 
 git init .
 git submodule add git://github.com/twobitlabs/TBMacros.git Libraries/TBMacros
+git submodule add git://github.com/twobitlabs/TBLCategories.git Libraries/TBLCategories
 git submodule add git://github.com/twobitlabs/AnalyticsKit.git Libraries/AnalyticsKit
 git submodule add git://github.com/twobitlabs/MagicalRecord.git Libraries/MagicalRecord
 git submodule add git://github.com/twobitlabs/ocmock.git Libraries/OCMock
