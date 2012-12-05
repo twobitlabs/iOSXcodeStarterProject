@@ -3,7 +3,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AnalyticsKitDebug.h"
+#import "AnalyticsKitDebugProvider.h"
 #import "AnalyticsKitTestFlightProvider.h"
 #import "MagicalRecord.h"
 
@@ -82,7 +82,7 @@ void analyticsExceptionHandler(NSException *exception) {
     NSMutableArray *providers = [NSMutableArray array];
     #ifdef DEBUG
         // Debug provider pops a UIAlertView when an error is logged
-        [providers addObject:[[AnalyticsKitDebug alloc] init]];
+        [providers addObject:[[AnalyticsKitDebugProvider alloc] init]];
     #endif
     
     #if (!TARGET_IPHONE_SIMULATOR)

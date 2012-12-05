@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B01DD3D159151E100B841A2 /* AnalyticsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD1D159151E100B841A2 /* AnalyticsKit.m */; };
-		8B01DD40159151E100B841A2 /* AnalyticsKitDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */; };
 		8B01DD43159151E100B841A2 /* AnalyticsKitTestFlightProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */; };
 		8B01DD44159151E100B841A2 /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD29159151E100B841A2 /* MIT-LICENSE */; };
 		8B01DD4B159151E100B841A2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD3C159151E100B841A2 /* README.md */; };
@@ -62,6 +61,7 @@
 		8B7CB9C014E460EA003DB51A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BE14E460EA003DB51A /* MainStoryboard_iPad.storyboard */; };
 		8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7CB9C214E460EB003DB51A /* ViewController.m */; };
 		8BD1D76514EB2790006DC604 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */; };
+		8BDBEB09166FBE4800DBB60B /* AnalyticsKitDebugProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBEB08166FBE4800DBB60B /* AnalyticsKitDebugProvider.m */; };
 		9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7516365310006A6E3F /* NSDate+TBL.m */; };
 		9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7716365310006A6E3F /* NSString+TBL.m */; };
 		9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7A16365310006A6E3F /* UIView+TBL.m */; };
@@ -106,8 +106,6 @@
 /* Begin PBXFileReference section */
 		8B01DD1C159151E100B841A2 /* AnalyticsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKit.h; sourceTree = "<group>"; };
 		8B01DD1D159151E100B841A2 /* AnalyticsKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKit.m; sourceTree = "<group>"; };
-		8B01DD21159151E100B841A2 /* AnalyticsKitDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitDebug.h; sourceTree = "<group>"; };
-		8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitDebug.m; sourceTree = "<group>"; };
 		8B01DD27159151E100B841A2 /* AnalyticsKitTestFlightProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitTestFlightProvider.h; sourceTree = "<group>"; };
 		8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitTestFlightProvider.m; sourceTree = "<group>"; };
 		8B01DD29159151E100B841A2 /* MIT-LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE"; sourceTree = "<group>"; };
@@ -233,6 +231,8 @@
 		8B7CB9C214E460EB003DB51A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8B7CB9CA14E460EB003DB51A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
+		8BDBEB07166FBE4800DBB60B /* AnalyticsKitDebugProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitDebugProvider.h; sourceTree = "<group>"; };
+		8BDBEB08166FBE4800DBB60B /* AnalyticsKitDebugProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitDebugProvider.m; sourceTree = "<group>"; };
 		9C025F7416365310006A6E3F /* NSDate+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TBL.h"; sourceTree = "<group>"; };
 		9C025F7516365310006A6E3F /* NSDate+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TBL.m"; sourceTree = "<group>"; };
 		9C025F7616365310006A6E3F /* NSString+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TBL.h"; sourceTree = "<group>"; };
@@ -313,10 +313,10 @@
 		8B01DD1B159151E100B841A2 /* AnalyticsKit */ = {
 			isa = PBXGroup;
 			children = (
+				8BDBEB07166FBE4800DBB60B /* AnalyticsKitDebugProvider.h */,
+				8BDBEB08166FBE4800DBB60B /* AnalyticsKitDebugProvider.m */,
 				8B01DD1C159151E100B841A2 /* AnalyticsKit.h */,
 				8B01DD1D159151E100B841A2 /* AnalyticsKit.m */,
-				8B01DD21159151E100B841A2 /* AnalyticsKitDebug.h */,
-				8B01DD22159151E100B841A2 /* AnalyticsKitDebug.m */,
 				8B01DD27159151E100B841A2 /* AnalyticsKitTestFlightProvider.h */,
 				8B01DD28159151E100B841A2 /* AnalyticsKitTestFlightProvider.m */,
 				8B01DD29159151E100B841A2 /* MIT-LICENSE */,
@@ -831,7 +831,6 @@
 				8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */,
 				9CBA2C2114E9BA14001C4F7C /* Constants.m in Sources */,
 				8B01DD3D159151E100B841A2 /* AnalyticsKit.m in Sources */,
-				8B01DD40159151E100B841A2 /* AnalyticsKitDebug.m in Sources */,
 				8B01DD43159151E100B841A2 /* AnalyticsKitTestFlightProvider.m in Sources */,
 				8B52D45615AA2D2100C72217 /* MagicalImportFunctions.m in Sources */,
 				8B52D45715AA2D2100C72217 /* NSAttributeDescription+MagicalDataImport.m in Sources */,
@@ -862,6 +861,7 @@
 				9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */,
 				9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */,
 				9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */,
+				8BDBEB09166FBE4800DBB60B /* AnalyticsKitDebugProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
