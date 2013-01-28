@@ -12,9 +12,6 @@
 		8B01DD44159151E100B841A2 /* MIT-LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD29159151E100B841A2 /* MIT-LICENSE */; };
 		8B01DD4B159151E100B841A2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DD3C159151E100B841A2 /* README.md */; };
 		8B01DE8A159151FF00B841A2 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 8B01DE89159151FF00B841A2 /* README */; };
-		8B52D41715AA2CC900C72217 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B52D41315AA2CC900C72217 /* libTestFlight.a */; };
-		8B52D41815AA2CC900C72217 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B52D41415AA2CC900C72217 /* README.txt */; };
-		8B52D41915AA2CC900C72217 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8B52D41515AA2CC900C72217 /* release_notes.txt */; };
 		8B52D45615AA2D2100C72217 /* MagicalImportFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52D41E15AA2D2100C72217 /* MagicalImportFunctions.m */; };
 		8B52D45715AA2D2100C72217 /* NSAttributeDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52D42015AA2D2100C72217 /* NSAttributeDescription+MagicalDataImport.m */; };
 		8B52D45815AA2D2100C72217 /* NSEntityDescription+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B52D42215AA2D2100C72217 /* NSEntityDescription+MagicalDataImport.m */; };
@@ -60,6 +57,9 @@
 		8B7CB9BD14E460EA003DB51A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BB14E460EA003DB51A /* MainStoryboard_iPhone.storyboard */; };
 		8B7CB9C014E460EA003DB51A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7CB9BE14E460EA003DB51A /* MainStoryboard_iPad.storyboard */; };
 		8B7CB9C314E460EB003DB51A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7CB9C214E460EB003DB51A /* ViewController.m */; };
+		8BC8DCE616B6197F00371B09 /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC8DCE216B6197E00371B09 /* libTestFlight.a */; };
+		8BC8DCE716B6197F00371B09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BC8DCE416B6197F00371B09 /* README.md */; };
+		8BC8DCE816B6197F00371B09 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8BC8DCE516B6197F00371B09 /* release_notes.md */; };
 		8BD1D76514EB2790006DC604 /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */; };
 		8BDBEB09166FBE4800DBB60B /* AnalyticsKitDebugProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDBEB08166FBE4800DBB60B /* AnalyticsKitDebugProvider.m */; };
 		9C025F7B16365310006A6E3F /* NSDate+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C025F7516365310006A6E3F /* NSDate+TBL.m */; };
@@ -112,10 +112,6 @@
 		8B01DD3C159151E100B841A2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		8B01DE88159151FF00B841A2 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		8B01DE89159151FF00B841A2 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		8B52D41315AA2CC900C72217 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
-		8B52D41415AA2CC900C72217 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		8B52D41515AA2CC900C72217 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
-		8B52D41615AA2CC900C72217 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		8B52D41D15AA2D2100C72217 /* MagicalImportFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalImportFunctions.h; sourceTree = "<group>"; };
 		8B52D41E15AA2D2100C72217 /* MagicalImportFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalImportFunctions.m; sourceTree = "<group>"; };
 		8B52D41F15AA2D2100C72217 /* NSAttributeDescription+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+MagicalDataImport.h"; sourceTree = "<group>"; };
@@ -230,6 +226,10 @@
 		8B7CB9C114E460EB003DB51A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		8B7CB9C214E460EB003DB51A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		8B7CB9CA14E460EB003DB51A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8BC8DCE216B6197E00371B09 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		8BC8DCE316B6197E00371B09 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		8BC8DCE416B6197F00371B09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8BC8DCE516B6197F00371B09 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.md; sourceTree = "<group>"; };
 		8BD1D76414EB2790006DC604 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 		8BDBEB07166FBE4800DBB60B /* AnalyticsKitDebugProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyticsKitDebugProvider.h; sourceTree = "<group>"; };
 		8BDBEB08166FBE4800DBB60B /* AnalyticsKitDebugProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyticsKitDebugProvider.m; sourceTree = "<group>"; };
@@ -276,8 +276,8 @@
 				9CBA2C1914E9B721001C4F7C /* libsqlite3.0.dylib in Frameworks */,
 				9CBA2C1A14E9B726001C4F7C /* SystemConfiguration.framework in Frameworks */,
 				9C9E279514E9D60B005D848C /* libz.dylib in Frameworks */,
-				8B52D41715AA2CC900C72217 /* libTestFlight.a in Frameworks */,
 				9C025F9616365FCE006A6E3F /* QuartzCore.framework in Frameworks */,
+				8BC8DCE616B6197F00371B09 /* libTestFlight.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +339,10 @@
 		8B52D41215AA2CC900C72217 /* TestFlightSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8B52D41315AA2CC900C72217 /* libTestFlight.a */,
-				8B52D41415AA2CC900C72217 /* README.txt */,
-				8B52D41515AA2CC900C72217 /* release_notes.txt */,
-				8B52D41615AA2CC900C72217 /* TestFlight.h */,
+				8BC8DCE216B6197E00371B09 /* libTestFlight.a */,
+				8BC8DCE316B6197E00371B09 /* TestFlight.h */,
+				8BC8DCE416B6197F00371B09 /* README.md */,
+				8BC8DCE516B6197F00371B09 /* release_notes.md */,
 			);
 			name = TestFlightSDK;
 			path = Libraries/TestFlightSDK;
@@ -765,8 +765,8 @@
 				8B01DD44159151E100B841A2 /* MIT-LICENSE in Resources */,
 				8B01DD4B159151E100B841A2 /* README.md in Resources */,
 				8B01DE8A159151FF00B841A2 /* README in Resources */,
-				8B52D41815AA2CC900C72217 /* README.txt in Resources */,
-				8B52D41915AA2CC900C72217 /* release_notes.txt in Resources */,
+				8BC8DCE716B6197F00371B09 /* README.md in Resources */,
+				8BC8DCE816B6197F00371B09 /* release_notes.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -87,8 +87,6 @@ void analyticsExceptionHandler(NSException *exception) {
     
     #if (!TARGET_IPHONE_SIMULATOR)
         #ifdef DEBUG
-            // Debug provider pops a UIAlertView when an error is logged
-            [providers addObject:[[AnalyticsKitDebug alloc] init]];
             // Setup TestFlight provider
             NSString *testFlightKey = [[NSBundle mainBundle] objectForInfoDictionaryKey:TESTFLIGHT_KEY];
             [providers addObject:[[AnalyticsKitTestFlightProvider alloc] initWithAPIKey:testFlightKey]];
