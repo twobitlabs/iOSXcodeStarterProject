@@ -71,6 +71,7 @@
 		9C7E972414E4EAC5008DA5D5 /* SomeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */; };
 		9C7E972714E4EBF8008DA5D5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C7E972514E4EBE1008DA5D5 /* CoreData.framework */; };
 		9C9E279514E9D60B005D848C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E279314E9D5FB005D848C /* libz.dylib */; };
+		9CB3C91E16D2E54600EB3EFC /* NSDateFormatter+TBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB3C91D16D2E54600EB3EFC /* NSDateFormatter+TBL.m */; };
 		9CBA2C1914E9B721001C4F7C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */; };
 		9CBA2C1A14E9B726001C4F7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */; };
 		9CBA2C2114E9BA14001C4F7C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA2C2014E9BA14001C4F7C /* Constants.m */; };
@@ -246,6 +247,8 @@
 		9C7E972214E4EAB8008DA5D5 /* SomeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeSpec.m; sourceTree = "<group>"; };
 		9C7E972514E4EBE1008DA5D5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9C9E279314E9D5FB005D848C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9CB3C91C16D2E54600EB3EFC /* NSDateFormatter+TBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+TBL.h"; sourceTree = "<group>"; };
+		9CB3C91D16D2E54600EB3EFC /* NSDateFormatter+TBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+TBL.m"; sourceTree = "<group>"; };
 		9CBA2C1514E9B6FA001C4F7C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9CBA2C1714E9B718001C4F7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9CBA2C1F14E9BA13001C4F7C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -599,6 +602,8 @@
 		9C025F7316365310006A6E3F /* TBLCategories */ = {
 			isa = PBXGroup;
 			children = (
+				9CB3C91C16D2E54600EB3EFC /* NSDateFormatter+TBL.h */,
+				9CB3C91D16D2E54600EB3EFC /* NSDateFormatter+TBL.m */,
 				9C025F7416365310006A6E3F /* NSDate+TBL.h */,
 				9C025F7516365310006A6E3F /* NSDate+TBL.m */,
 				9C025F7616365310006A6E3F /* NSString+TBL.h */,
@@ -862,6 +867,7 @@
 				9C025F7C16365310006A6E3F /* NSString+TBL.m in Sources */,
 				9C025F7E16365310006A6E3F /* UIView+TBL.m in Sources */,
 				8BDBEB09166FBE4800DBB60B /* AnalyticsKitDebugProvider.m in Sources */,
+				9CB3C91E16D2E54600EB3EFC /* NSDateFormatter+TBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
